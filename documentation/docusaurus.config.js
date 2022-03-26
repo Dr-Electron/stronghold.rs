@@ -5,6 +5,16 @@ module.exports = {
     url: '/',
     baseUrl: '/',
     themes: ['@docusaurus/theme-classic'],
+    themeConfig: {
+        navbar: {
+            items: [
+                {
+                    type: 'docsVersionDropdown',
+                    docsPluginId: 'stronghold-rs',
+                }
+            ]
+        }
+    },
     plugins: [
         [
             '@docusaurus/plugin-content-docs',
@@ -14,7 +24,15 @@ module.exports = {
                 routeBasePath: 'stronghold',
                 sidebarPath: path.resolve(__dirname, './sidebars.js'),
                 editUrl: 'https://github.com/iotaledger/stronghold/edit/dev/',
-                remarkPlugins: [require('remark-code-import'), require('remark-import-partial'), require('remark-remove-comments')],
+                remarkPlugins: [require('remark-code-import'), require('remark-remove-comments')],
+                versions: {
+                    current: {
+                        label: 'Shimmer'
+                    },
+                    iota: {
+                        label: 'IOTA'
+                    }
+                }
             }
         ],
     ],

@@ -80,15 +80,15 @@ that devices on different networks can collaborate cryptographically.
 [motivation]: #motivation
 ### Research
 Coming on the heels of the Trinity attack, it became clear that a new method for securing secrets needed to be manufactured and made
-available to the pantheon of Shimmer Products.
+available to the pantheon of IOTA Products.
 
 ### Market opportunities
-- Integration with the Wallet, Nodes, Identity, Access and developer toolchains strengthens Shimmer’s internal position.
+- Integration with the Wallet, Nodes, Identity, Access and developer toolchains strengthens IOTA’s internal position.
 - Publishing the low-level libraries will enable third-parties interested in secure rust-based systems will expand the visibility
-of Shimmer in the security community.
+of IOTA in the security community.
 
 ### Alignment with mission
-- Creating and maintaining open source software, and providing educational opportunities is the core mission of the Shimmer Stiftung.
+- Creating and maintaining open source software, and providing educational opportunities is the core mission of the IOTA Stiftung.
 
 ### Current resources/technology
 - Using off-the-shelf libraries has always been a trade-off. Writing the library in Rust using as few external dependencies as
@@ -98,7 +98,7 @@ in the long-term.
 ## Product Introduction{#product}
 [product]: #product
 ### Business Application Benefits
-- Enhance the security posture of critical Shimmer Products
+- Enhance the security posture of critical IOTA Products
 - Enhance the perception of the IF as a “security-focussed” organisation.
 - Create new avenues for partnership and 3rd party implementation.
 
@@ -109,12 +109,12 @@ in the long-term.
 
 ### Educational Benefits
 - Rust is a single source of code truth is a practice that the IF is interested in.
-- Helping developers new to Shimmer use a secure system from the beginning is a good way to train.
+- Helping developers new to IOTA use a secure system from the beginning is a good way to train.
 - Learning about Fuzzing is useful for all developers.
 
 ## Stakeholders
 [stakeholders]: #stakeholders
-A number of Shimmer foundation stakeholders have been involved in the design process, ranging
+A number of IOTA foundation stakeholders have been involved in the design process, ranging
 from Engineering to Product and developer outreach.
 
 ## Guide-level explanation
@@ -137,13 +137,13 @@ prior work from Daniel Thompson-Yvetot and Tensor at their security boutique "IO
 ### 2. High level library (stronghold.rs)
 
 The high level library integrates engine.rs and iota.rs to a fully fledged secret storage and
-enclave based system for operations in the context of the Shimmer Protocol.
+enclave based system for operations in the context of the IOTA Protocol.
 
-Its primary purpose is to serve as the operational enclave for several Shimmer Products:
+Its primary purpose is to serve as the operational enclave for several IOTA Products:
 - Wallet
 - Identity
 
-This work will be undertaken in house by Shimmer developers.
+This work will be undertaken in house by IOTA developers.
 
 ### 3. Actor Model layer
 
@@ -151,7 +151,7 @@ The Actor Model layer is a thin wrapper for message parsing and message sending 
 built for interaction with the wallet and any other projects that deem the actor model
 suitable to their needs.
 
-This work will be undertaken in house by Shimmer developers.
+This work will be undertaken in house by IOTA developers.
 
 ## Prior art
 [prior-art]: #prior-art
@@ -166,8 +166,8 @@ A hardware token storage system that uses two STM chips (ST31 for secure storage
 for actual processing.
 
 ### Cryptocore
-“The CryptoCore is Shimmer hardware designed for applications that need fast, dedicated proof of work and a secure
-memory. The device consists of an Shimmer CryptoCore FPGA (ICCFPGA) module and a development board that doubles as a
+“The CryptoCore is IOTA hardware designed for applications that need fast, dedicated proof of work and a secure
+memory. The device consists of an IOTA CryptoCore FPGA (ICCFPGA) module and a development board that doubles as a
 Raspberry Pi HAT, making it perfect for standalone applications and/or quick prototyping.“
 
 ### WeChat MiniPrograms

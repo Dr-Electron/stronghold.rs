@@ -1,9 +1,9 @@
 ---
-description: Contribute to Stronghold by joining the Shimmer Stronghold Initiative, reporting a bug or suggesting a new feature in the GitHub repository, or sharing your knowledge on Discord.
+description: Contribute to Stronghold by joining the IOTA Stronghold Initiative, reporting a bug or suggesting a new feature in the GitHub repository, or sharing your knowledge on Discord.
 image: /img/logo/Stronghold_icon.png
 keywords:
 - contribute
-- Shimmer Stronghold initiative
+- IOTA Stronghold initiative
 - github
 - documentation
 - discord
@@ -13,9 +13,9 @@ keywords:
 
 **Thanks for thinking about contributing to the project! We have the following ways that you can contribute.**
 
-## Join the Shimmer Stronghold Initiative
+## Join the IOTA Stronghold Initiative
 
-The [Shimmer Stronghold Initiative](https://github.com/iota-community/X-Team_IOTA_Stronghold) is a collaborative effort to help improve the developer experience.
+The [IOTA Stronghold Initiative](https://github.com/iota-community/X-Team_IOTA_Stronghold) is a collaborative effort to help improve the developer experience.
 
 - Quality assurance and review
 - Documentation

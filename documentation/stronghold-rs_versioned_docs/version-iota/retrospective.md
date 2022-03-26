@@ -15,7 +15,7 @@ keywords:
 
 ***Abstract:***
 
-This document will detail the development of the Stronghold Engine library for Shimmer's Stronghold project. It will briefly touch upon the different revisions of this project and the lessons that were learned from each revision. It will also discuss some of the rationale with regards to the implementation decisions that were made along the way. This document is meant to be a high level overview but it will contain some lower level explanations where appropriate.
+This document will detail the development of the Stronghold Engine library for IOTA's Stronghold project. It will briefly touch upon the different revisions of this project and the lessons that were learned from each revision. It will also discuss some of the rationale with regards to the implementation decisions that were made along the way. This document is meant to be a high level overview but it will contain some lower level explanations where appropriate.
 
 ***Development History and Breakdown:***
 
@@ -62,7 +62,7 @@ A couple important lessons were learned from building the three different revisi
    * The system should include a small dependency footprint for IoT and Embedded support.
    * There was no reason to reinvent the wheel as many of the features could be implemented via existing libraries and tools.
 
-Stronghold Engine needed to be small, extensible, and secure if it was going to fit the use case that Shimmer wanted and doing things this way meant that many of the features could be generalized into interfaces. Rather than a full scale platform, Stronghold Engine would be better suited as a set of modular libraries. A final revision was mapped out as a library that was split into multiple crates:
+Stronghold Engine needed to be small, extensible, and secure if it was going to fit the use case that IOTA wanted and doing things this way meant that many of the features could be generalized into interfaces. Rather than a full scale platform, Stronghold Engine would be better suited as a set of modular libraries. A final revision was mapped out as a library that was split into multiple crates:
 
 * Primitives Crate
 * Random Crate
@@ -136,13 +136,13 @@ Most of these concepts could be implemented as independent libraries or by exten
 
 I found working on this project was a learning experience; it was interesting and a nice change of pace. Developing the Engine forced me to examine aspects of cryptography that I had only barely been exposed to in the past. While I have worked on Cryptocurrency platforms such as Steem, I've never worked with secure data this closely. Some of my initial assumptions were either wrong or incomplete and by the end of this development process I had a much more thorough understanding of cryptography as a whole.
 
-I do believe that  Engine is a very strong starting line for the Stronghold platform. The future developers will be able to use it effectively in their projects and I look forward to seeing how they extend it. I thank Shimmer for giving me the opportunity to work on this project and I wish them luck going forward.
+I do believe that  Engine is a very strong starting line for the Stronghold platform. The future developers will be able to use it effectively in their projects and I look forward to seeing how they extend it. I thank IOTA for giving me the opportunity to work on this project and I wish them luck going forward.
 
 ## Addendum
 
 ***Architectural changes***
 
-The Random, Crypto and Primitives crates were removed from the engine in favor of Shimmer Crypto.rs library.  There were some pain points in implementing crypto.rs due to it being immature at the time but it has now taken over the logic that was delegated to the aforementioned crates. The versioning system was also removed from the engine due to a lack of use by the implementing libraries. The versioning abstraction has now been delegated to the end user for the sake of simplicity and a `Location.counter` API was added to facilitate this. 
+The Random, Crypto and Primitives crates were removed from the engine in favor of IOTA’s Crypto.rs library.  There were some pain points in implementing crypto.rs due to it being immature at the time but it has now taken over the logic that was delegated to the aforementioned crates. The versioning system was also removed from the engine due to a lack of use by the implementing libraries. The versioning abstraction has now been delegated to the end user for the sake of simplicity and a `Location.counter` API was added to facilitate this. 
 
 The Vault logic was completely re-written for the sake of simplifying the core and also increasing the general performance of the library.  Along these lines, a new crate was introduced called Runtime which adds so-called `guarded types`.  The guarded types make it so that any piece of data which is placed into the vault is protected from memory based attacks and other potential misuses. A global allocator was also added to zero out all of the memory when it gets dropped from use. Runtime relies heavily on libsodium for these features. 
 
@@ -158,7 +158,7 @@ Going forward, the team on stronghold has discussed a couple features which can 
 
 - A DSL for allowing users to define their own procedures using a set of given cryptographic primitives.  This would effectively allow outside users to define their own procedures without exposing the secrets to malicious actors. 
 - A set of macros to easily allow devs to add new procedures to the system.  The object of this system would be to make it easier for developers to plug in new procedures without having to create large sweeping changes.  For example, a developer could simply annotate a function and on compilation, the system would generate the appropriate code and boilerplate. 
-- Migration from Riker to Actix.  Unfortunately, the Riker actor model library has been left stranded by its contributors. Rather than taking ownership of the library and working to maintain it in the Shimmer foundation, a decision was made to move forward with using Actix inside of the stronghold client. 
+- Migration from Riker to Actix.  Unfortunately, the Riker actor model library has been left stranded by its contributors. Rather than taking ownership of the library and working to maintain it in the IOTA foundation, a decision was made to move forward with using Actix inside of the stronghold client. 
 - Continued development on the p2p crate. 
 
 **Addendum Concluding Thoughts**

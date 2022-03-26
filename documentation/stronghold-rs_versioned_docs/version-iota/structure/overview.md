@@ -7,7 +7,7 @@ keywords:
 - components
 ---
 
-# Shimmer Stronghold Structure
+# IOTA Stronghold Structure
 
 In this section we describe the individual crates and components of Stronghold:
 
