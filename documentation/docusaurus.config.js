@@ -35,6 +35,14 @@ module.exports = {
                 }
             }
         ],
+        [
+            'docusaurus-plugin-module-alias',
+            {
+                alias: {
+                    '@local': path.resolve(__dirname),
+                },
+            }
+        ],
     ],
     staticDirectories: [path.resolve(__dirname, './static')],
 };

@@ -4258,6 +4258,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"docusaurus-plugin-module-alias@npm:^0.0.2":
+  version: 0.0.2
+  resolution: "docusaurus-plugin-module-alias@npm:0.0.2"
+  dependencies:
+    joi: ^17.3.0
+  checksum: 46fe7f53f24c3beab68dc7347470dfea6db652284eafaaa5cdf3d461ddacd0e40905a0938ea446e07b5a91930dcb0bd285877f253f01fa2f0b2bb1b8114bbc2b
+  languageName: node
+  linkType: hard
+
 "dom-converter@npm:^0.2.0":
   version: 0.2.0
   resolution: "dom-converter@npm:0.2.0"
@@ -6133,7 +6142,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"joi@npm:^17.6.0":
+"joi@npm:^17.3.0, joi@npm:^17.6.0":
   version: 17.6.0
   resolution: "joi@npm:17.6.0"
   dependencies:
@@ -9336,6 +9345,7 @@ __metadata:
     "@docusaurus/core": latest
     "@docusaurus/plugin-content-docs": ^2.0.0-beta.17
     "@docusaurus/theme-classic": latest
+    docusaurus-plugin-module-alias: ^0.0.2
     react: ^17.0.1
     react-dom: ^17.0.1
     remark-code-import: ^0.3.0
