@@ -14,9 +14,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Install dependencies
+      - name: Switch directory
         run: |
           cd documentation
+      - name: Install dependencies
+        run: |
           yarn install --immutable
       - name: Test build
         run : |
