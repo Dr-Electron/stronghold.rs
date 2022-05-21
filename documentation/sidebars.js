@@ -12,7 +12,7 @@
 module.exports = {
   mySidebar: [{
       type: 'doc',
-      id: 'welcome',
+      id: 'welcorne',
       label: 'Welcome'
     }, {
       type: 'doc',
